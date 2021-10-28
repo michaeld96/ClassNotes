@@ -1,0 +1,64 @@
+body
+{
+    padding: 10px;
+    margin: 10px;
+    font-family: Andale Mono;
+    background-color: grey;
+}
+main
+{
+    background-color: whitesmoke;
+    width: 100%;
+}
+h1
+{
+    font-size: 250%;
+    text-align: center;
+    text-decoration: underline;
+
+}
+.google-form
+{
+    text-align: center;
+    width: 100%;
+    height: 80rem;
+}
+iframe
+{
+    width: 75%;
+    height: 100%;
+}
+.arrow
+{
+    font-size: 3rem;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    transition: ease .5s;
+}
+.arrow:hover
+{
+    color: red;
+}
+footer
+{
+    position: relative;
+    width: 100%;
+    height: 5rem;
+    background: black;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+.icons a
+{
+    margin-left: 10px;
+    color:#FFCB05;
+    font-size: 3rem;
+    text-decoration: none;
+    transition: ease 1s;
+}
+.icons a:hover
+{
+    color:red;
+}
