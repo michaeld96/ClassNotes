@@ -62,3 +62,14 @@ footer
 {
     color:red;
 }
+@media screen and (max-width: 690px)
+{
+    .icons a:hover
+{
+    color: #FFCB05;
+}
+.arrow:hover
+{
+    color: black;
+}
+}

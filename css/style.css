@@ -214,4 +214,12 @@ footer
 {
     grid-column: 2/-2;
 }
+.icons a:hover
+{
+    color: #FFCB05;
+}
+.contact button:hover
+{
+    background-color: #00274C;
+}
 }
