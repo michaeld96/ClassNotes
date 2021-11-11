@@ -9,10 +9,52 @@
 	<script src="https://kit.fontawesome.com/4c4bda27d1.js" crossorigin="anonymous"></script>
     <link rel = "shortcut icon" type="image/png" href="imgs/favicon.png"/>
     <title>Michael's Class Notes</title>
+    <!-- Font from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <!-- Font from Google -->
 </head>
 <body>
     <main>
-        <header><h1>Class Notes!</h1></header>
+        <!-- Start Nav Bar -->
+        <header class = "header">
+            <nav class= "navbar">
+                <p class = "nav-logo">ClassNotes</p>
+                <ul class = 'nav-menu'>
+                    <li class = "nav-item">
+                        <a href="" onclick="location.reload()" class = 'nav-link'>Home</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href="#classes"  class = 'nav-link'>Classes/Fun Sites</a>
+                    </li>
+                    <li class = "nav-item">
+                        <a href="contact.html" class = 'nav-link'>Contact?</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                    <span class = "bar"></span>
+                </div>
+            </nav>
+            <nav class = 'nav-dropdown'> 
+                <ul class = 'nav-menu-dropdown'>
+                    <li class = "nav-item-dropdown">
+                        <a href="" onclick="location.reload()" class = 'nav-link-dropdown'>Home</a>
+                    </li>
+                    <li class = "nav-item-dropdown">
+                        <a href="#classes" class = 'nav-link-dropdown'>Classes/Fun Sites</a>
+                    </li>
+                    <li class = "nav-item-dropdown">
+                        <a href="contact.html" class = 'nav-link-dropdown'>Contact?</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <!-- End Nav Bar -->
+        <h1>Class Notes!</h1>
         <div class = bio-container>
             <img src="imgs/me.jpeg" alt="Me!">
             <p>
@@ -24,7 +66,9 @@
                    I just want to design these engines and implement them.
             </p>
         </div>
+        <!-- Start for Section for Notes and Sites -->
         <h2>Classes/Fun Sites:</h2>
+        <a name = "classes"></a>
         <div class = "class-container">
             <a href = "content/Javascript-Notes.pdf" target="_blank"> 
                 <button class = "btn1">
@@ -57,7 +101,7 @@
                 to practice JavaScript. Lots of fun to make. Wanted to attach to this site so y'all could enjoy.
             <p>
         </div>
-
+        <!-- End for Section for Notes and Sites -->
         <div class = "contact">
             <a href="contact.html">
                 <button>
@@ -75,4 +119,5 @@
         </div>
     </footer>
 </body>
+<script src="js/indexjs.js"></script>
 </html>

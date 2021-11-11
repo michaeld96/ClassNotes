@@ -8,14 +8,48 @@
     <!-- Below is used for Font Awesome. -->
 	<script src="https://kit.fontawesome.com/4c4bda27d1.js" crossorigin="anonymous"></script>
     <link rel = "shortcut icon" type="image/png" href="imgs/favicon.png"/>
+    
     <title>Contact</title>
 </head>
 <body>
 <main>
-    <a href="index.html" class = "arrow">
-        <i class="fas fa-long-arrow-alt-left"></i>
-        Going Back?
-    </a>
+     <!-- Start Nav Bar -->
+     <header class = "header">
+        <nav class= "navbar">
+            <p class = "nav-logo">ClassNotes</p>
+            <ul class = 'nav-menu'>
+                <li class = "nav-item">
+                    <a href="index.html" class = 'nav-link'>Home</a>
+                </li>
+                <li class = "nav-item">
+                    <a href="index.html#classes"  class = 'nav-link'>Classes/Fun Sites</a>
+                </li>
+                <li class = "nav-item">
+                    <a href="contact.html" class = 'nav-link'>Contact?</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+                <span class = "bar"></span>
+            </div>
+        </nav>
+        <nav class = 'nav-dropdown'> 
+            <ul class = 'nav-menu-dropdown'>
+                <li class = "nav-item-dropdown">
+                    <a href="index.html"  class = 'nav-link-dropdown'>Home</a>
+                </li>
+                <li class = "nav-item-dropdown">
+                    <a href="index.html#classes" class = 'nav-link-dropdown'>Classes/Fun Sites</a>
+                </li>
+                <li class = "nav-item-dropdown">
+                    <a href="contact.html" class = 'nav-link-dropdown'>Contact?</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- End Nav Bar -->
     <h1>Contact Form:</h1>
     <div class = "google-form">
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdjyZaR5GWsWPWHWasG_nn4SIwIpD-kFSQ1gEAcSRpH62Nu0A/viewform?embedded=true">Loading…</iframe>
@@ -30,5 +64,6 @@
        <a href="https://math.stackexchange.com/users/917059/michael"><i class="fab fa-stack-exchange"></i></a>
     </div>
 </footer>
+<script src="js/indexjs.js"></script>
 </body>
 </html>

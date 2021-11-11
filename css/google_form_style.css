@@ -5,6 +5,72 @@ body
     font-family: Andale Mono;
     background-color: grey;
 }
+/* Start of Nav Style */
+.nav-dropdown
+{
+    display: none;
+}
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: #00274C;
+}
+/* Start of Styling of Hamburger */
+.hamburger
+{
+    display: none;
+}
+.bar
+{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #FFCB05;
+}
+.nav-menu
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-item
+{
+    margin-left: 5rem;
+}
+.nav-link
+{
+    transition: ease 1s;
+    font-size:1.4rem;
+    font-weight: 400;
+    color: #FFCB05;
+}
+
+.nav-link:hover
+{
+    color: red;
+}
+.nav-logo
+{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #FFCB05;
+}
+/* End of Styling of Hamburger */
+li
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+}
+/* End of Nav Style */
 main
 {
     background-color: whitesmoke;
@@ -62,14 +128,67 @@ footer
 {
     color:red;
 }
-@media screen and (max-width: 690px)
+@media screen and (max-width: 775px)
 {
     .icons a:hover
 {
     color: #FFCB05;
 }
-.arrow:hover
+/* Start of Nav Style For Mobile*/
+.nav-menu
 {
-    color: black;
+    display: none;   
 }
+
+.nav-link-dropdown
+{   
+    
+    font-size:1.4rem;
+    font-weight: 400;
+    color: #FFCB05;
+}
+.nav-item-dropdown
+{
+    margin: 5rem 0px;
+    padding: 1rem 0;
+}
+.nav-dropdown
+{
+
+    text-align: center;
+    position: relative;
+    top: -80px;
+    width: 100%;
+    background-color: #00274C;
+}
+
+.nav-dropdown.active
+{
+    display:block;
+    opacity: 1;
+}
+.nav-item
+{
+    /* padding: 1rem;
+    margin: 2rem 0; */
+    margin: 2.5rem 0;
+}
+.hamburger
+{
+    display: block;
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    
+}
+/* End of Nav Style For Mobile*/
 }
