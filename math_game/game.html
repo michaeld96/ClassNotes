@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="game.css">
+    <script src = "game.js"></script>
+    <!-- Below is used for Font Awesome. -->
+	<script src="https://kit.fontawesome.com/4c4bda27d1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        
+    </nav>
+    <h1>Math Game</h1>
+    <p class = "author">Built with JavaScript by Me!</p>
+    <div class="game-space">
+        <p class = "instructions">
+            Welcome! This game will test your arithmatic skills. You will enter in a number in spot 1, a operator in spot 2, and another number in spot 3 then hit enter.
+            The operators that this application supports is +,-,/,*. Enter the operators as they are displayed for this to work properly. When you hit enter you will have 30 seconds
+            to type in your answer. If you get it correct we will let you know! Have fun!
+            <hr>
+        </p>
+            <!-- Start Game -->
+            <div class="spot1">
+                <input type="text" id="num1" name="num1" size="1">
+                <p class = "small-caption">Spot 1</p>
+            </div>
+            <div class="spot2">
+                <input type="text" id="operation" name="operation" size="1">
+                <p class = "small-caption">Spot 2</p>
+            </div>
+            <div class="spot3">
+                <input type="text" id="num2" name="num2" size="1">
+                <p class = "small-caption">Spot 3</p>
+            </div>
+            <div class="enter-butt">
+                <button id = "enter-button" onclick="input(); starting_timer(); display_div()">Enter!</button>
+            </div>
+            <hr>
+        <div class="hidden" id = "hidden">
+            <input type="text" id = "guess" name = "guess" size 1>
+            <br>
+            <button onclick="user_guess()">Enter in your Answer!</button>
+            <p class = "timer"><span id = "time">00:30</span> Remaining!</p>
+        </div>
+            
+            <!-- End Game -->
+            <!-- Comparing Results -->
+            <hr>
+            <h2>Results!</h2>
+            <div class="results">
+                <p id = "announcement"></p>
+                <div class="user-result">
+                Your Answer
+                <p id = "result"></p>
+                </div>
+                <div class="computer-result">
+                Our Answer
+                <p id = "correct-ans"></p>
+                </div>
+                <h3 id = "outcome"></h3>
+                <p id = "solution"></p>
+            </div>
+            <button onclick="location.reload()">Restart?</button>
+    </div>
+    <footer>
+        <div class = "icons">
+           <a href="https://www.linkedin.com/in/michaeldi1996/"target="_blank"><i class="fab fa-linkedin"></i></a>
+           <a href="https://www.instagram.com/_mikedick_/"target="_blank"><i class="fab fa-instagram-square"></i></a>
+           <a href="https://github.com/michaeld96"target="_blank"><i class="fab fa-github-square"></i></a>
+           <a href="https://math.stackexchange.com/users/917059/michael"target="_blank"><i class="fab fa-stack-exchange"></i></a>
+        </div>
+    </footer>
+</body>
+</html>

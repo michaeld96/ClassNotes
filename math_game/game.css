@@ -1,0 +1,101 @@
+body
+{
+    background-color: #FFCB05;
+    /* background-color: rgb(196, 240, 255); */
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+h1
+{
+    font-size: 4rem;
+    margin-bottom: -10px;
+}
+.small-caption
+{
+    font-size: 40%;
+}
+
+.spot1, .spot2, .spot3
+{
+    display: inline-block;
+    /* margin-top: 20px; */
+}
+p[class = "author"]
+{
+    font-size: .8rem;
+}
+#hidden
+{
+    display: none;
+}
+p[class = "instructions"]
+{
+    margin-bottom: 5%;
+}
+div[class = "game-space"]
+{
+    padding: 8px;
+    background-color: #FAF9F6;
+    height: auto;
+    margin: 10px 10px;
+}
+div input
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5rem;
+    width: 35px;
+    height: 35px;
+}
+#guess
+{   margin-top: 25px;
+    margin-bottom: 20px;
+    width: 100px;
+}
+p[class = "timer"]
+{
+    margin-top: 30px;
+}
+span
+{
+    color: red;
+    border: solid black 1px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
+div[class = "game-space"] button
+{
+    font-family: 'Courier New', Courier, monospace;
+    width: fit-content;
+    height: 35px; 
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+}
+#outcome
+{
+    color: red;
+}
+footer
+{
+    width: 100%;
+    height: 5rem;
+    background: black;
+    text-align: center;
+    padding-top: 10px;
+    margin: 0px;
+    
+}
+.icons a
+{
+    margin-left: 10px;
+    color:#FFCB05;
+    font-size: 3rem;
+    text-decoration: none;
+    transition: ease 1s;
+}
+.icons a:hover
+{
+    color:red;
+}
